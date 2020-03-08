@@ -1,0 +1,13 @@
+
+<div class="container">
+  <h1>Bottles</h1>
+
+  <% @bottles.each do |bottle| %>
+    <div class="card p-1 m-1">
+      <div class="card-header"> <%= bottle.name %></div>
+      <div class="card-content"><%= bottle.description %></div>
+    </div>
+  <% end %>
+
+<%= link_to "New Bottle", new_bottle_path, class: 'btn btn-primary'  %>
+</div>
